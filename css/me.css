@@ -42,19 +42,31 @@ img{
 .info{
     background-color: grey;
     height:330px;
-    width:80%;
-    display: inline-flex;
+    width:80%;/*
+    display: inline-flex;*/
     float: right;
 }
+
+.picture{
+    float: left;
+}
+
+/*Added a float left to your picture class, as it was just displayed normally.*/
+
 .list{
     background-color: cyan;
     width: 330px;
     height: 300px;
 }
 .lists{ 
+    clear: both;
     margin-top: 10px;
+    display: flex;
     flex-direction: row;
 }
+
+/*Fixed your lists, as they were not displayed next to each other due to no display flex in the lists class*/
+
 h2, h3{
     font-style: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
